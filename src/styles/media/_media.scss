@@ -1,0 +1,70 @@
+@media only screen and (min-width: 768px){
+    #__next{
+        .regular-container{
+            .regular-list{
+                ul{
+                    grid-template-columns: repeat(3, 30%);
+    
+                    li{
+                        figure{
+                            .image-wrapper{
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    #__next{
+        display: grid;
+        grid-template-columns: 10% 90%;
+
+        nav {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            padding: 20px 30px;
+    
+            .nav-container{
+                border-radius: 20px;
+                height: 100%;
+                flex-direction: column;
+                padding: 50px 0;
+    
+                ul{
+                    li{
+                        display: block;
+                        margin: 3rem 0;
+                    }
+                }
+            }
+        }
+
+        form { 
+            margin: 30px 0 0;
+
+                label {
+                    input{
+                        font-size: 22px;
+                        padding: 20px 15px 10px 15px;
+                    }
+                    input:focus{
+                        border-bottom: 2px solid rgb(46, 46, 80);
+                    }
+                }
+        }
+
+        .regular-container{
+            .regular-list{
+                ul{
+                    grid-template-columns: repeat(4, 22%);
+                    gap: 30px 0px;
+                }
+            }
+        }
+    }
+}
