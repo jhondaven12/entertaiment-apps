@@ -9,10 +9,11 @@ export default function App({
 }) {
   return (
     <SessionProvider session={session}>
-      <Head>
-        <title>Entertaiment App</title>
-      </Head>
       <Layout>
+        <Head>
+          <title>Entertaiment App</title>
+          <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+        </Head>
         <Component {...pageProps} />
       </Layout>
     </SessionProvider>

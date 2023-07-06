@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
@@ -26,10 +25,6 @@ function Series() {
 
     return (
         <>
-            <Head>
-                <meta name="entertaiment-apps" property="series" content="series" key="series" />
-            </Head>
-
             <form onSubmit={handleSearch}>
                 <label htmlFor="search">
                     <div>

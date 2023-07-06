@@ -29,9 +29,9 @@ function Regular({ imageInfo, imageUrlSmall, imageUrlMedium, imageUrlLarge, hand
 
     const imageCategory = () => {
         if (imageInfo.category === "Movie") {
-            return "/assets/icon-category-movie.svg";
+            return "../assets/icon-category-movie.svg";
         } else {
-            return "/assets/icon-category-tv.svg";
+            return "../assets/icon-category-tv.svg";
         }
     };
 
@@ -49,6 +49,7 @@ function Regular({ imageInfo, imageUrlSmall, imageUrlMedium, imageUrlLarge, hand
                             alt={imageInfo.title}
                             fill={true}
                             priority={false}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     </div>
 
@@ -56,9 +57,10 @@ function Regular({ imageInfo, imageUrlSmall, imageUrlMedium, imageUrlLarge, hand
                         <button onClick={handleBookmarkToggle}>
                             <div>
                                 <Image
-                                    src={imageInfo.isBookmarked ? "/assets/icon-bookmark-full.svg" : "/assets/icon-bookmark-empty.svg"}
+                                    src={imageInfo.isBookmarked ? "../assets/icon-bookmark-full.svg" : "../assets/icon-bookmark-empty.svg"}
                                     alt="save-icon"
                                     fill={true}
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
                             </div>
                         </button>
@@ -74,9 +76,10 @@ function Regular({ imageInfo, imageUrlSmall, imageUrlMedium, imageUrlLarge, hand
                             <button>
                                 <div>
                                     <Image
-                                        src={imageInfo.isBookmarked ? "/assets/icon-bookmark-full.svg" : "/assets/icon-bookmark-empty.svg"}
+                                        src={imageInfo.isBookmarked ? "../assets/icon-bookmark-full.svg" : "../assets/icon-bookmark-empty.svg"}
                                         alt="save-icon"
                                         fill={true}
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                     />
                                 </div>
                             </button>
@@ -87,9 +90,10 @@ function Regular({ imageInfo, imageUrlSmall, imageUrlMedium, imageUrlLarge, hand
                         <button className="icon-play">
                             <div>
                                 <Image
-                                    src="/assets/icon-play.svg"
+                                    src="../assets/icon-play.svg"
                                     alt="icon-play"
                                     fill={true}
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
                             </div>
                             Play

@@ -1,5 +1,5 @@
-import Head from "next/head";
 import Image from "next/image";
+import SearchIcon from "../../public/assets/icon-search.svg"
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import AllList from "./AllList";
@@ -26,15 +26,11 @@ function Page() {
 
   return (
     <>
-      <Head>
-        <meta name="entertaiment-apps" property="entertaiment-apps" content="entertaiment-apps" key="entertaiment-apps"/>
-      </Head>
-
       <form onSubmit={handleSearch}>
         <label htmlFor="search">
           <div>
             <Image
-              src="/assets/icon-search.svg"
+              src={SearchIcon}
               alt="search"
               fill={true}
             />

@@ -15,7 +15,7 @@ function Navigation() {
                         <Link href="/">
                             <div>
                                 <Image
-                                    src="/assets/logo.svg"
+                                    src="../assets/logo.svg"
                                     alt="logo-icon"
                                     fill={true}
                                 />
@@ -28,7 +28,7 @@ function Navigation() {
                             <Link href="/">
                                 <div className={router.pathname === "/" ? 'activeLink' : ''}>
                                     <Image
-                                        src="/assets/icon-nav-home.svg"
+                                        src="../assets/icon-nav-home.svg"
                                         alt="home-icon"
                                         fill={true}
                                     />
@@ -39,7 +39,7 @@ function Navigation() {
                             <Link href="/movie">
                                 <div className={router.pathname === "/movie" ? 'activeLink' : ''}>
                                     <Image
-                                        src="/assets/icon-nav-movies.svg"
+                                        src="../assets/icon-nav-movies.svg"
                                         alt="movie-icon"
                                         fill={true}
                                     />
@@ -50,7 +50,7 @@ function Navigation() {
                             <Link href="/series">
                                 <div className={router.pathname === "/series" ? 'activeLink' : ''}>
                                     <Image
-                                        src="/assets/icon-nav-tv-series.svg"
+                                        src="../assets/icon-nav-tv-series.svg"
                                         alt="movie-icon"
                                         fill={true}
                                     />
@@ -62,7 +62,7 @@ function Navigation() {
                             <Link href="/bookmark">
                                 <div className={router.pathname === "/bookmark" ? 'activeLink' : ''}>
                                     <Image
-                                        src="/assets/icon-nav-bookmark.svg"
+                                        src="../assets/icon-nav-bookmark.svg"
                                         alt="movie-icon"
                                         fill={true}
                                     />
