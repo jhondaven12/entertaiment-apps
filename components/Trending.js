@@ -111,22 +111,18 @@ function Trending({ imageInfo, imageUrlMobile, imageUrlDesktop, handleToggleBook
                     )}
 
                     {!session && status == "unauthenticated" && (
-                        <Link
-                            href="/api/auth/signin"
-                            onClick={e => {
-                                e.preventDefault()
-                                signIn()
-                            }}>
-                            <button>
-                                <div>
-                                    <Image
-                                        src={imageInfo.isBookmarked ? "/assets/icon-bookmark-full.svg" : "/assets/icon-bookmark-empty.svg"}
-                                        alt="save-icon"
-                                        fill={true}
-                                    />
-                                </div>
-                            </button>
-                        </Link>
+                        <button onClick={e => {
+                            e.preventDefault()
+                            signIn()
+                        }}>
+                            <div>
+                                <Image
+                                    src={imageInfo.isBookmarked ? "/assets/icon-bookmark-full.svg" : "/assets/icon-bookmark-empty.svg"}
+                                    alt="save-icon"
+                                    fill={true}
+                                />
+                            </div>
+                        </button>
                     )}
                 </div>
             </figure>

@@ -74,8 +74,7 @@ function Navigation() {
 
                     <figure className="thumbnail">
                         {!session && status == "unauthenticated" && (
-                            <Link
-                                href="/api/auth/signin"
+                            <button
                                 onClick={e => {
                                     e.preventDefault()
                                     signIn()
@@ -89,12 +88,11 @@ function Navigation() {
                                         priority={false}
                                     />
                                 </div>
-                            </Link>
+                            </button>
                         )}
 
                         {session && status == "authenticated" && (
-                             <Link 
-                             href="/api/auth/signout"
+                             <button
                              onClick={e => {
                                  e.preventDefault()
                                  signOut()
@@ -108,7 +106,7 @@ function Navigation() {
                                      priority={false}
                                  />
                              </div>
-                         </Link>
+                         </button>
                         )}
                     </figure>
                 </div>

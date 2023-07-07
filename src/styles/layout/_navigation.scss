@@ -19,11 +19,18 @@ nav {
             outline: 3px solid white;
             border-radius: 100%;
             overflow: hidden;
+            
+        button {
+            border-radius: 100%;
+            border: none;
+            background-color: transparent;
+            overflow: hidden;
 
-            .user-profile {
-                position: relative;
-                width: 35px;
-                aspect-ratio: 1/1;
+                .user-profile {
+                    position: relative;
+                    width: 35px;
+                    aspect-ratio: 1/1;
+                }
             }
         }
 

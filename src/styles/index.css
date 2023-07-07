@@ -33,7 +33,13 @@ nav .nav-container .thumbnail {
   border-radius: 100%;
   overflow: hidden;
 }
-nav .nav-container .thumbnail .user-profile {
+nav .nav-container .thumbnail button {
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+nav .nav-container .thumbnail button .user-profile {
   position: relative;
   width: 35px;
   aspect-ratio: 1/1;

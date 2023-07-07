@@ -67,23 +67,19 @@ function Regular({ imageInfo, imageUrlSmall, imageUrlMedium, imageUrlLarge, hand
                     )}
 
                     {!session && status == "unauthenticated" && (
-                        <Link 
-                            href="/api/auth/signin"
-                            onClick={e => {
-                                e.preventDefault()
-                                signIn()
-                            }}>
-                            <button>
-                                <div>
-                                    <Image
-                                        src={imageInfo.isBookmarked ? "/assets/icon-bookmark-full.svg" : "/assets/icon-bookmark-empty.svg"}
-                                        alt="save-icon"
-                                        fill={true}
-                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                    />
-                                </div>
-                            </button>
-                        </Link>
+                        <button onClick={e => {
+                            e.preventDefault()
+                            signIn()
+                        }}>
+                            <div>
+                                <Image
+                                    src={imageInfo.isBookmarked ? "/assets/icon-bookmark-full.svg" : "/assets/icon-bookmark-empty.svg"}
+                                    alt="save-icon"
+                                    fill={true}
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                />
+                            </div>
+                        </button>
                     )}
 
                     <div className="overlay">
