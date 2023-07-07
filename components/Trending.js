@@ -34,9 +34,9 @@ function Trending({ imageInfo, imageUrlMobile, imageUrlDesktop, handleToggleBook
     //Change category icon
     const imageCategory = () => {
         if (imageInfo.category === "Movie") {
-            return "../assets/icon-category-movie.svg";
+            return "/assets/icon-category-movie.svg";
         } else {
-            return "../assets/icon-category-tv.svg";
+            return "/assets/icon-category-tv.svg";
         }
     }
 
@@ -51,7 +51,7 @@ function Trending({ imageInfo, imageUrlMobile, imageUrlDesktop, handleToggleBook
                     <div className="icon-play">
                         <div className="image-wrapper">
                             <Image
-                                src="../assets/icon-play.svg"
+                                src="/assets/icon-play.svg"
                                 alt="play"
                                 fill={true}
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -101,7 +101,7 @@ function Trending({ imageInfo, imageUrlMobile, imageUrlDesktop, handleToggleBook
                         <button onClick={handleBookmarkToggle}>
                             <div>
                                 <Image
-                                    src={imageInfo.isBookmarked ? "../assets/icon-bookmark-full.svg" : "../assets/icon-bookmark-empty.svg"}
+                                    src={imageInfo.isBookmarked ? "/assets/icon-bookmark-full.svg" : "/assets/icon-bookmark-empty.svg"}
                                     alt="save-icon"
                                     fill={true}
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -120,7 +120,7 @@ function Trending({ imageInfo, imageUrlMobile, imageUrlDesktop, handleToggleBook
                             <button>
                                 <div>
                                     <Image
-                                        src={imageInfo.isBookmarked ? "../assets/icon-bookmark-full.svg" : "../assets/icon-bookmark-empty.svg"}
+                                        src={imageInfo.isBookmarked ? "/assets/icon-bookmark-full.svg" : "/assets/icon-bookmark-empty.svg"}
                                         alt="save-icon"
                                         fill={true}
                                     />
