@@ -12,7 +12,7 @@ export default function App({
       <Layout>
         <Head>
           <title>Entertaiment App</title>
-          <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+          <meta httpEquiv="Permissions-Policy" content="interest-cohort=()"/>
         </Head>
         <Component {...pageProps} />
       </Layout>
