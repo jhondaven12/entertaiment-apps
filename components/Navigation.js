@@ -77,7 +77,7 @@ function Navigation() {
                             <button
                                 onClick={e => {
                                     e.preventDefault()
-                                    signIn()
+                                    signIn('github')
                                 }}>
                                 <div className="user-profile">
                                     <Image
