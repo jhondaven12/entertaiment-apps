@@ -15,7 +15,7 @@ function Navigation() {
                         <Link href="/">
                             <div>
                                 <Image
-                                    src="/assets/logo.svg"
+                                    src="assets/logo.svg"
                                     alt="logo-icon"
                                     fill={true}
                                 />
