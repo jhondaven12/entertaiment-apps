@@ -9,11 +9,6 @@ function useLocalJson() {
     useEffect(() => {
         const fetchData = async () => {
             try{
-                const token = process.env.GITHUB_TOKEN;
-                const headers = {
-                    Authorization: `token ${token}`,
-                    'Content-Type': 'application/json',
-                }
                 const response = await axios.get('https://jhondaven12.github.io/entertaimentApi/movie.json');
                 setData(response.data.movie);
                 sessionStorage.setItem('localJsonData', JSON.stringify(response.data.movie));
