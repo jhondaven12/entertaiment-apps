@@ -31,7 +31,7 @@ function Bookmark(){
         event.preventDefault();
         const inputValue = event.target.search.value;
         setSearchTerm(inputValue);
-        inputValue === '' || null ? router.push('/Bookmark') : router.push(`/Bookmark?search=${encodeURIComponent(inputValue)}`) 
+        inputValue === '' || null ? router.push('/bookmark') : router.push(`/bookmark?search=${encodeURIComponent(inputValue)}`) 
     };
 
     return (
